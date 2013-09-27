@@ -3,7 +3,8 @@
 
 define apt::source(
   $location = '',
-  $release = 'karmic',
+  $include_release = true,
+  $release = 'precise',
   $repos = 'main',
   $include_src = true,
   $required_packages = false,

@@ -1,5 +1,5 @@
 # <%= name %>
-deb <%= location %> <%= release %> <%= repos %>
+deb <%= location %><%- if include_release then -%> <%= release %><%- end -%> <%= repos %>
 <%- if include_src then -%>
-deb-src <%= location %> <%= release %> <%= repos %>
+deb-src <%= location %><%- if include_release then -%> <%= release %><%- end -%> <%= repos %>
 <%- end -%>
